@@ -35,6 +35,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 				}
 			@media (max-width:921px){.ast-comment-avatar-wrap img{max-width:2.5em;}.comments-area{margin-top:1.5em;}.ast-comment-meta{padding:0 1.8888em 1.3333em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 2.14em;}.ast-separate-container .comment-respond{padding:2em 2.14em;}.ast-separate-container .comments-title{padding:1.43em 1.48em;}.ast-comment-avatar-wrap{margin-right:0.5em;}}</style>
 <link rel="stylesheet" id="astra-google-fonts-css" href="https://fonts.googleapis.com/css?family=Roboto%3A400%7CPoppins%3A400&#038;display=fallback&#038;ver=4.7.3" media="all">
+<link rel="stylesheet" id="visual-portfolio-lazyload-css" href="/wp-content/plugins/visual-portfolio/build/assets/css/lazyload.css?ver=1721492483" media="all">
 <style id="wp-emoji-styles-inline-css">img.wp-smiley, img.emoji {
 		display: inline !important;
 		border: none !important;
@@ -118,6 +119,21 @@ var VPData = {"version":"3.3.9","pro":false,"__":{"couldnt_retrieve_vp":"Couldn'
 		<script>document.documentElement.classList.add(
 				'vp-lazyload-enabled'
 			);</script>
+				<script>(function(){
+				// Check if fallback is not necessary.
+				if ( CSS.supports('selector(:has(div))') ) {
+					return;
+				}
+
+				var linkTag = document.createElement("link");
+				linkTag.setAttribute('rel', 'stylesheet');
+				linkTag.setAttribute('href', '/wp-content/plugins/visual-portfolio/assets/css/lazyload-fallback.min.css?ver=3.3.9');
+				document.head.appendChild(linkTag);
+
+				var scriptTag = document.createElement("script");
+				scriptTag.setAttribute('src', '/wp-content/plugins/visual-portfolio/assets/js/lazyload-fallback.min.js?ver=3.3.9');
+				document.head.appendChild(scriptTag);
+			}());</script>
 		<style id="uagb-style-conditional-extension">@media (min-width: 1025px){body .uag-hide-desktop.uagb-google-map__wrap,body .uag-hide-desktop{display:none !important}}@media (min-width: 768px) and (max-width: 1024px){body .uag-hide-tab.uagb-google-map__wrap,body .uag-hide-tab{display:none !important}}@media (max-width: 767px){body .uag-hide-mob.uagb-google-map__wrap,body .uag-hide-mob{display:none !important}}</style>
 </head>
 
@@ -298,7 +314,8 @@ var VPData = {"version":"3.3.9","pro":false,"__":{"couldnt_retrieve_vp":"Couldn'
 					<article id="comment-1" class="ast-comment">
 					<div class="ast-comment-info">
 						<div class="ast-comment-avatar-wrap">
-<img alt="" data-src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=50&#038;d=mm&#038;r=g" data-srcset="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=100&#038;d=mm&#038;r=g 2x" class="avatar avatar-50 photo lazyload" height="50" width="50" decoding="async" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="--smush-placeholder-width: 50px; --smush-placeholder-aspect-ratio: 50/50;"><noscript><img alt="" src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=50&#038;d=mm&#038;r=g" srcset="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=100&#038;d=mm&#038;r=g 2x" class="avatar avatar-50 photo" height="50" width="50" decoding="async"></noscript>
+<noscript><img alt="" src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=50&#038;d=mm&#038;r=g" srcset="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=100&#038;d=mm&#038;r=g 2x" class="avatar avatar-50 photo" height="50" width="50" decoding="async"></noscript>
+<img alt src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=50&#038;d=mm&#038;r=g" srcset="data:image/svg+xml;base64,/hello-world/PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHZpZXdCb3g9IjAgMCA1MCA1MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4" class="avatar avatar-50 photo vp-lazyload" height="50" width="50" decoding="async" data-src="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=50&#038;d=mm&#038;r=g" data-srcset="http://1.gravatar.com/avatar/d7a973c7dab26985da5f961be7b74480?s=100&#038;d=mm&#038;r=g 2x" data-sizes="auto" loading="eager">
 </div>
 <!-- Remove 1px Space
 						-->
@@ -434,6 +451,11 @@ Commenter avatars come from <a href="https://en.gravatar.com/">Gravatar</a>.</p>
 <script id="starter-templates-zip-preview-js-extra">var starter_templates_zip_preview = {"AstColorPaletteVarPrefix":"--ast-global-color-","AstEleColorPaletteVarPrefix":["ast-global-color-0","ast-global-color-1","ast-global-color-2","ast-global-color-3","ast-global-color-4","ast-global-color-5","ast-global-color-6","ast-global-color-7","ast-global-color-8"]};</script>
 <script src="/wp-content/plugins/astra-sites/inc/lib/onboarding/assets/dist/template-preview/main.js?ver=06758d4d807d9d22c6ea" id="starter-templates-zip-preview-js"></script>
 <script src="/wp-content/plugins/wp-smushit/app/assets/js/smush-lazy-load.min.js?ver=3.16.5" id="smush-lazy-load-js"></script>
+<script src="/wp-content/plugins/visual-portfolio/build/assets/js/lazysizes-cfg.js?ver=e4a684c7748623ddbf8b" id="lazysizes-config-js"></script>
+<script src="/wp-content/plugins/visual-portfolio/build/assets/js/lazysizes-object-fit-cover.js?ver=4.1.0" id="lazysizes-object-fit-cover-js"></script>
+<script src="/wp-content/plugins/visual-portfolio/build/assets/js/lazysizes-swiper-duplicates-load.js?ver=e9a9d96930527983f1eb" id="lazysizes-swiper-duplicates-load-js"></script>
+<script src="/wp-content/plugins/visual-portfolio/assets/vendor/lazysizes/lazysizes.min.js?ver=5.3.2" id="lazysizes-js"></script>
+<script src="/wp-content/plugins/visual-portfolio/build/assets/js/lazyload.js?ver=9a1f538569ebb9961833" id="visual-portfolio-lazyload-js"></script>
 			<script>/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);</script>
 				</body>
 </html>
