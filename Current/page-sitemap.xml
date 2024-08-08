@@ -2,9 +2,12 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>/</loc>
-		<lastmod>2024-08-03T17:00:03+00:00</lastmod>
+		<lastmod>2024-08-08T01:21:11+00:00</lastmod>
 		<image:image>
 			<image:loc>/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-15-at-14.58.01_59db6515-1-1024x887.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/08/338931112_770671494524049_4292629518318940864_n.jpeg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>/wp-content/uploads/2024/08/WinterWinnipeg.Acrylic_-min.jpg</image:loc>
