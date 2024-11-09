@@ -2,9 +2,12 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-image/1.1 http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>/</loc>
-		<lastmod>2024-10-11T22:15:49+00:00</lastmod>
+		<lastmod>2024-11-09T18:40:28+00:00</lastmod>
 		<image:image>
 			<image:loc>/wp-content/uploads/2024/07/WhatsApp-Image-2024-07-15-at-14.58.01_59db6515-1-1024x887.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/11/Winter-Paradise.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>/wp-content/uploads/2024/09/Free-copy-of-the-painting-by-Jan-Vermeer-Girl-with-a-Pearl-Earring.jpg</image:loc>
@@ -14,6 +17,9 @@
 		</image:image>
 		<image:image>
 			<image:loc>/wp-content/uploads/2024/08/Lonely-Farm-2.jpg</image:loc>
+		</image:image>
+		<image:image>
+			<image:loc>/wp-content/uploads/2024/08/Lonely-Farm.jpg</image:loc>
 		</image:image>
 		<image:image>
 			<image:loc>/wp-content/uploads/2024/08/338931112_770671494524049_4292629518318940864_n.jpeg</image:loc>
